@@ -5,11 +5,10 @@ import { toggleSearch } from "../searchSlice";
 const Search = () => {
   const theme = useSelector((state) => state.theme);
   const search = useSelector((state) => state.search);
-  const inputSearch = document.getElementById("search-input");
   const dispatch = useDispatch();
-  function hangleSearch() {
-    const name = inputSearch.value;
-    dispatch(toggleSearch(name));
+  function hangleSearch(value) {
+    
+    dispatch(toggleSearch(value));
   }
   return (
     <div className="search-container">
@@ -23,7 +22,7 @@ const Search = () => {
         width={20}
       />
       <input
-        onChange={hangleSearch}
+        onChange={(e) => hangleSearch(e.target.value) }
         id="search-input"
         type="text"
         placeholder="Search for a country..."
