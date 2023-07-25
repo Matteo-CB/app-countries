@@ -1,0 +1,131 @@
+@import '../settings';
+.details{
+    
+    .back{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin-top: 50px;
+        padding: 10px 30px;
+        width: max-content;
+        p{
+            img{
+                padding-right: 10px;
+            }
+            display: flex;
+            align-items: center;
+        }
+        background: $lightModeElements;
+    }
+    
+    .details-content{
+        align-items: center;
+        img{
+            width: 100%;
+        }
+        display: grid;
+        grid-template-columns: 50% 50%;
+        @media screen and (max-width:1200px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr;
+        }
+        @media screen and (max-width:530px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 0.9fr 1fr;
+        }
+        @media screen and (max-width:480px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 0.9fr 1fr;
+        }
+        @media screen and (max-width:460px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 0.9fr 1fr;
+        }
+        @media screen and (max-width:390px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 0.8fr 1fr;
+        }
+        @media screen and (max-width:300px) {
+            grid-template-columns: 100%;
+            grid-template-rows: 0.7fr 1fr;
+        }
+    }
+}
+.dark{
+    .back{
+        background: $darkModeElements!important;
+    }
+}
+.data-content{
+    @media screen and (max-width:620px) {
+        justify-self: flex-start;
+        align-self: flex-start;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    h2{
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin: 20px 0;
+    }
+    padding: 30px 30px 100px 30px;
+    p{
+        font-size: 0.7rem;
+        width: max-content;
+        @media screen and (max-width:480px) {
+            font-size: 0.6rem;
+        }
+        @media screen and (max-width:300px) {
+            font-size: 0.5rem;
+        }
+    }
+    @media screen and (max-width:480px) {
+        padding: 0;
+    }
+}
+.description-content{
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:620px) {
+        display: block;
+    }
+    
+}
+.description-content1{
+    @media screen and (max-width:620px) {
+        margin-bottom: 30px;
+    }
+}
+.border-countries{
+    p{
+        width: 100%;
+    }
+    strong{
+        display: flex;
+
+        align-items: center;
+    }
+    text-align: center;
+    margin: 50px 0 0 0;
+    span:not(.borders-container){
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 5px;
+        padding: 10px 15px;
+        background: $lightModeElements;
+    }
+}
+.dark{
+    .border-countries{
+        span:not(.borders-container){
+            background: $darkModeElements;
+        }
+    }
+}
+.borders-container{
+    display: inline-block;
+    width: 100%;
+flex-wrap: wrap;
+display: flex;
+span{
+    text-align: center;
+    flex: 1 1 auto;
+}
+}

@@ -1,0 +1,45 @@
+@import '../settings';
+
+.search-container{
+    min-width: 300px;
+    width:20%;
+    @media screen and (max-width:630px) {
+        min-width: 250px;
+    }
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    align-items: center;
+    input{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: none;
+        &::placeholder{
+            color: $lightModeInput;
+            font-size: 0.7rem;
+            padding: 10px;
+            margin-top: -50px;
+    
+        }
+    }
+    img{
+        padding:0px 0 0 10px;
+    }
+}
+.light{
+    .search-container{
+        background: $lightModeElements;
+    }
+}
+.dark{
+    .search-container{
+        input{
+            background: $darkModeElements; 
+            &::placeholder{
+                color: $darkModeText;
+        
+            }
+        }
+        background: $darkModeElements;
+    }
+}

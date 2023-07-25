@@ -1,0 +1,65 @@
+// --- Variables ---
+
+// -- Color --
+
+// - Neutral -
+
+// Dark Blue
+$darkModeElements: hsl(209, 23%, 22%);
+
+// Very Dark Blue
+$darkModeBg: hsl(207, 26%, 17%);
+
+// Very Dark Blue
+$lightModeText: hsl(200, 15%, 8%);
+
+// Dark Gray
+$lightModeInput : hsl(0, 0%, 52%);
+
+// Very Light Gray
+$lightModeBg: hsl(0, 0%, 98%);
+
+// White
+$darkModeText: hsl(0, 0%, 100%);
+
+// White
+$lightModeElements: hsl(0, 0%, 100%);
+
+// -- Fonts --
+
+@font-face {
+    font-family: NunitoSans;
+    src: url('./font/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
+
+$font: NunitoSans;
+
+// --- Général ---
+.app {
+    min-height: 100vh;
+}
+.dark{
+    background: $darkModeBg;
+}
+.light{
+    background: $lightModeBg;
+}
+.dark{
+    *{
+        color: $darkModeText;
+    }
+}
+.light{
+    *{
+        color: $lightModeText;
+    }
+}
+*{
+    padding: 0;
+    margin: 0;
+   font-family: $font;
+}
+.app{
+    width: 85%;
+    margin: 0 auto;
+}
