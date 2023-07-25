@@ -8,11 +8,8 @@ const Search = () => {
   const inputSearch = document.getElementById("search-input");
   const dispatch = useDispatch();
   function hangleSearch() {
-    if (inputSearch) {
-      dispatch(toggleSearch(inputSearch.value));
-    } else {
-      dispatch(toggleSearch(inputSearch.value));
-    }
+    const name = inputSearch.value;
+    dispatch(toggleSearch(name));
   }
   return (
     <div className="search-container">
