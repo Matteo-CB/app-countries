@@ -49,6 +49,13 @@ $font: NunitoSans;
         color: $darkModeText;
     }
 }
+footer{
+text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 .light{
     *{
         color: $lightModeText;
