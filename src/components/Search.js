@@ -10,6 +10,8 @@ const Search = () => {
   function hangleSearch() {
     if (inputSearch) {
       dispatch(toggleSearch(inputSearch.value));
+    } else {
+      dispatch(toggleSearch(inputSearch.value));
     }
   }
   return (

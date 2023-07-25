@@ -38,7 +38,7 @@ const CardContainer = () => {
         (filter !== "all"
           ? data
               .filter((e) => e.region.includes(filter))
-              .filter((e) => e.name.e.name.includes(search))
+              .filter((e) => e.name.includes(search))
               .map((e, index) => {
                 return <Card data={e} key={index} />;
               })
