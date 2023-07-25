@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { useSelector } from "react-redux";
 import FormFilter from "../components/FormFilter";
 import CardContainer from "../components/CardContainer";
+import Footer from "../components/Footer";
 import Details from "./Details";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
           <Details />
         </div>
       )}
+  <Footer />
     </div>
   );
 };
