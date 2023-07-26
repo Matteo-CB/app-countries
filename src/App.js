@@ -4,6 +4,7 @@ import store from "./store";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
+import Legal from "./pages/Legal";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          
+          <Route path="/legal" element={<Legal />} />
         </Routes>
       </BrowserRouter>
     </Provider>
